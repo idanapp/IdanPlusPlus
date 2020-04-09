@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name"><![CDATA[Idan Plus Plus]]></string>
+    <string name="browse_title"><![CDATA[Idan Plus Plus]]></string>
+
+    <!-- Error messages -->
+
+    <!-- Global Search -->
+    <!-- The action label for global search_vod -->
+
+    <!-- The label for use as a searchable item -->
+
+    <!-- The hint text that appears in the search_vod box. -->
+
+    <!-- The description that will show up in the search_vod settings for this source.  -->
+
+    <!-- Strings related to guided sequence activity -->
+    <string name="header_icon">Header icon</string>
+
+    <!-- Strings related to onboarding -->
+
+
+    <string name="playback_tag">PLAYBACK_TAG</string>
+    <string name="ISRAEL_LIVE_CHANNELS_CATEGORY">Israel Live Channels</string>
+    <string name="ISRAEL_RADIO_CHANNELS_CATEGORY">Live Israel Radio Channels</string>
+    <string name="CHANNEL_11_TITLE">Channel 11</string>
+    <string name="CHANNEL_11_DESC">Channel 11 Live</string>
+    <string name="CHANNEL_12_TITLE">Channel 12</string>
+    <string name="CHANNEL_12_DESC">Channel 12 Live</string>
+    <string name="CHANNEL_13_TITLE">Channel 13</string>
+    <string name="CHANNEL_13_DESC">Channel 13 Live</string>
+    <string name="CHANNEL_23_TITLE">Channel 23</string>
+    <string name="CHANNEL_23_DESC">Channel 23 Live</string>
+    <string name="CHANNEL_MAKAN_TITLE">Channel 33</string>
+    <string name="CHANNEL_MAKAN_DESC">Channel 33</string>
+    <string name="CHANNEL_KNESSET_TITLE">Channel Knesset</string>
+    <string name="CHANNEL_KNESSET_DESC">Channel Knesset</string>
+    <string name="BACK_EXIT">Please click BACK again to exit</string>
+    <string name="UPDATE_DIALOG_TITLE">New Version found</string>
+    <string name="UPDATE_DIALOG_DESCRIPTION">Update new sotfware avialable From Version: %1$s To Version: %2$s</string>
+    <string name="UPDATE_DIALOG_BTN_UPDATE">Update</string>
+    <string name="UPDATE_DIALOG_BTN_CANCEL">Not now</string>
+    <string name="BTN_GOTIT">Got it!!</string>
+    <string name="UPDAE_ERROR_MSESSAGE_TITLE">Unexpected error please try again a few moments.</string>
+    <string name="ENGLISH_DISCLAMIER">Disclaimer / clarification\n
+        This is an experimental project for educational purposes only and it DOES NOT host or stream any content and is not the initial source of the links.\n
+        Its purpose is to gather available sourcs from the internet and offer an interface that is usable form on non touch screens. All links can be found in other sources.\n
+        Service is completely free, non-profit and not affiliated with any commercial party. This software is free and open to the general public.\n
+        If you have paid money for installation or use of the software, you have been robbed and you are welcome to contact the parties that have engaged you.\n
+        By clicking the \"Got It\" button I confirm that I have read, understood and agree to the above\n
+        For contact please email: idanapp@tutanota.com\n\n
+    </string>
+    <string name="HEBREW_DISCLAMIER">כתב ויתור \ הבהרה \n
+        זהו פרויקט ניסיוני למטרות לימודיות בלבד והוא אינו מארח או מזרים כל תוכן והוא לא המקור הראשוני של הקישורים.\n
+        מטרתו היא לאסוף מקורות זמינים מהאינטרנט ולהציע ממשק שמיש עבור מסכים ללא מגע. את כל הקישורים ניתן למצוא במקורות אחרים.\n
+        השירות הוא לגמרי בחינם, ללא כוונת רווח ולא מזוהה עם כל צד מסחרי.\n
+        תוכנה זו מופצת בחינם ופתוחה לכלל הציבור.\n
+        אם שילמת כסף עבור התקנה או שימוש  בתוכנה, שדדו אותך ואתה מוזמן לפנות לגורמים שעשקו אותך.\n
+        בלחיצה על הכפתור הבנתי אני מאשר שקראתי ,הבנתי ואני מסכים לאמור לעיל\n
+        ליצירת קשר יש לפנות לדואל: idanapp@tutanota.com\n\n
+    </string>
+    <string name="WHAT_IS_NEW_TXT">
+                <![CDATA[
+<strong>מה חדש</strong><br/>
+<p>
+חברים יקרים, תקופת הלימוד של צוות עידן הסתיימה ואכן היתה למידה משמעותית מהפרוייקט הזה, אנחנו רוצים להודות לכל מי שלקח חלק בפרוייקט כן לעדכן כי הקוד מקור עלה לגיט<br/>
+<a href="https://github.com/idanapp/Idan-">עידן++ קוד מקור</a>
+</p>
+        ]]>
+    </string>
+
+    <string name="CHECK_UPDATE_MSG">Searching for update</string>
+    <string name="UPDATE_PROGRESS_MESSAGE">Downloading update...</string>
+</resources>
