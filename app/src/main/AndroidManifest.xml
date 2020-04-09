@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+     Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.idan.plusplus">
+
+    <permission
+        android:name="${applicationId}.ACCESS_VIDEO_DATA"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="${applicationId}.ACCESS_MOVIES_DATA"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="${applicationId}.ACCESS_VIDEO_DATA" />
+    <uses-permission android:name="${applicationId}.ACCESS_MOVIES_DATA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="false" />
+
+
+    <application
+        android:name=".app"
+        android:allowBackup="false"
+        android:banner="@drawable/logo_new"
+        android:icon="@drawable/app_icon_quantum"
+        android:label="@string/app_name"
+        android:logo="@drawable/logo_new"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Leanback"
+        android:largeHeap="true"
+        android:hardwareAccelerated="true"
+        tools:replace="android:allowBackup,android:appComponentFactory"
+        android:launchMode="singleInstance"
+        android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation|layoutDirection"
+        android:appComponentFactory="whateverString">
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.updateProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_update_provider" />
+        </provider>
+        <meta-data
+            android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"
+            android:value="com.example.idan.plusplus.Support.CastOptionsProvider" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:icon="@drawable/logo_new"
+            android:label="@string/app_name"
+            android:logo="@drawable/logo_new"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation|layoutDirection"
+            android:theme="@style/Theme.Leanback.Browse">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+
+        <activity
+            android:name=".ui.PlaybackActivity"
+            android:supportsPictureInPicture="true"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation|layoutDirection"
+            android:launchMode="singleTask"
+            android:resizeableActivity="true" />
+
+
+        <activity
+            android:name=".Dialogs.AppUpdateDialogActivity"
+            android:exported="true"
+            android:theme="@style/LeanbackPreferences" />
+
+
+
+
+    </application>
+
+</manifest>
